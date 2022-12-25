@@ -1,3 +1,13 @@
+1.Create a text box and dropdown with 2 status (active, inactive) [addserver]
+2.Button , on click add button take the input and display in a list [serverlist]
+3.Appcomponent, parent component for both.
+4.Server name and status are mandatory.
+5.Server with the status active should display in a green background and inactive in a blur background
+6.Each server list has a delete item
+
+addon:
+Bootstrap Alerts
+
 # AppServer
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
