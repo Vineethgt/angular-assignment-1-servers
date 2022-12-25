@@ -1,0 +1,20 @@
+.w {
+  width: 80%;
+  background-color: rgba(225, 225, 225, 0.854);
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.b {
+  border: 2px solid red;
+}
+
+.p {
+  padding: 10px;
+}
+
+.addserver {
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(120, 120, 120);
+}

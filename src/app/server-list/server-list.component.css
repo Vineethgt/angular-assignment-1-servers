@@ -1,0 +1,13 @@
+.header {
+  margin: 10px;
+}
+.server-list {
+  margin-left: 5%;
+  margin-right: 5%;
+  box-shadow: 5px 5px 20px rgb(200, 200, 200);
+}
+
+.mp {
+  margin: 5px;
+  padding: 10px;
+}

@@ -1,0 +1,34 @@
+<p class="header">SERVER LIST</p>
+<div class="server-list" *ngIf="servers.length != 0">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Server Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let item of servers; index as i"
+        [ngStyle]="{
+          background: item.status === 'active' ? '#CFFDE1' : '#FF9F9F'
+        }"
+      >
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ item.name }}</td>
+        <td>{{ item.status }}</td>
+        <td>
+          <button
+            type="button"
+            class="btn btn-danger mp"
+            (click)="deleteServer(i)"
+          >
+            <i class="material-icons">&#xE872;</i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

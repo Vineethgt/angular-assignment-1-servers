@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'App-server';
+  serverList:{name:string, status:string}[]=[]
+
+  addServerEvent(serverData:{name:string, status:string}){
+    this.serverList.push(serverData)
+    // console.log(serverData)
+    // console.log(this.serverList)
+  }
+  
 }
