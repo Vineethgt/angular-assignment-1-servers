@@ -15,6 +15,8 @@ export class AddServerComponent {
   addServer(serverName:string,serverStatus:string){
     if(!serverName || !serverStatus){
       this.alertsService.showAlert("Server Name and Server status are Mandatory","Empty Fields")
+    }else if(serverName.trim()==""){
+      this.alertsService.showAlert("Server Name should not be blank spaces","Empty Fields")
     }else{
       this.serverEvent.emit({
         name:serverName,

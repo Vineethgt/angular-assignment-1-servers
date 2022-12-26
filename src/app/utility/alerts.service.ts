@@ -11,4 +11,8 @@ export class AlertsService {
   showAlert(message:string,title:string){
     this.toastr.error(message, title)
   }
+
+  validationAlert(message:string,title:string){
+    this.toastr.info(message, title)
+  }
 }

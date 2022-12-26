@@ -9,6 +9,7 @@ export class ServerListComponent {
   @Input() servers:{name:string, status:string}[]=[]
 
   deleteServer(i:number){
+    console.log(this.servers[i])
     this.servers.splice(i,1)
   }
 
